@@ -127,6 +127,7 @@ a:focus {
 	color: LightGreen;
 }
 
+
 /* ===================================================================
  *  03. typography & general theme styles - (_document-setup.scss) 
  *
@@ -815,8 +816,8 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-	background: GreenYellow;
-	color: DarkOliveGreen;
+	background: Tan;
+	color: SaddleBrown;
 }
 
 .button.button-primary:hover,
@@ -830,8 +831,8 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-	background: DarkOliveGreen;
-	color: GreenYellow;
+	background: SaddleBrown;
+	color: Tan;
 }
 
 button.full-width,
