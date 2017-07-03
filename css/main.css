@@ -3173,3 +3173,18 @@ footer .footer-social li:last-child {
 	}
 
 }
+
+/* masik link */
+
+.darklink a:link, a:visited {
+    color: Sienna;
+    padding: 14px 25px;
+    text-align: center; 
+    text-decoration: none;
+    display: inline-block;
+}
+
+.darklink a:hover, a:active {
+	color: Sienna;
+    background-color: Cornsilk;
+}
