@@ -7,9 +7,9 @@
    <!--- basic page needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>Angela's personal portfolio and CV page</title>
-	<meta name="description" content="">  
-	<meta name="author" content="">
+	<title>Angela</title>
+	<meta name="description" content="Angela's portfolio site">  
+	<meta name="author" content="Angela's portfolio site">
 
    <!-- mobile specific metas
    ================================================== -->
@@ -17,523 +17,704 @@
 
  	<!-- CSS
    ================================================== -->
-   <link rel="stylesheet" href="css/base.css">
-   <link rel="stylesheet" href="css/vendor.css">  
-   <link rel="stylesheet" href="css/main.css">  
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
    <!-- script
-   ================================================== -->
+   ================================================== -->   
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
 
    <!-- favicons
 	================================================== -->
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" type="image/png" href="favicon.png">
 
 </head>
-
 
 <body id="top">
 
 	<!-- header 
    ================================================== -->
-   <header> 
+   <header>   	
+   	<div class="row">
 
-   	<div class="header-logo">
-	      <a href="index.html">HELLO VISITOR! I am Angéla.</a>
-	   </div> 
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-		<a id="header-menu-trigger" href="#0">
-		 	<span class="header-menu-text">Menu</span>
-		  	<span class="header-menu-icon"></span>
-		</a> 
+	   		<div class="logo">
+		         <a href="index.html">Angela</a>
+		      </div>		      
 
-		<nav id="menu-nav-wrap">
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+									
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
 
-			<a href="#0" class="close-button" title="close"><span>Close</span></a>	
-
-	   	<h3>Hello visitor! <br/> I am Angéla..</h3>  
-
-			<ul class="nav-list">
-				<li class="current"><a class="smoothscroll" href="#home" title="">Home</a></li>
-				<li><a class="smoothscroll" href="#about" title="">About</a></li>
-				<li><a class="smoothscroll" href="#skills" title="">Skills</a></li>
-				<li><a class="smoothscroll" href="#credentials" title="">Experience</a></li>
-				<li><a class="smoothscroll" href="#portfolio" title="">Works</a></li>
-				<li><a class="smoothscroll" href="#stats" title="">Stats</a></li>				
-				<li><a class="smoothscroll" href="#contact" title="">Contact</a></li>						
-			</ul>	
-
-			<ul class="header-social-list">
-	         <li>
-	         	<a href="#"><i class="fa fa-facebook-square"></i></a>
-	         </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-twitter"></i></a>
-	         </li>
-            <li>
-            	<a href="#"><i class="fa fa-behance"></i></a>
-            </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-dribbble"></i></a>
-	         </li>
-	         <li>
-	         	<a href="#"><i class="fa fa-instagram"></i></a>
-	         </li>
-	      </ul>		
-
-		</nav>  <!-- end #menu-nav-wrap -->
-
-	</header> <!-- end header -->  
-
-
-   <!-- home
+	<!-- intro section
    ================================================== -->
-   <section id="home">
+   <section id="intro">   
 
-   	<div class="overlay"></div><div class="gradient-overlay"></div>
+   	<div class="intro-overlay"></div>	
 
-   	<div class="home-content-table">		   
+   	<div class="intro-content">
+   		<div class="row">
 
-		   <div class="home-content-tablecell">
-		   	<div class="row">
-		   		<div class="col-twelve">		   			
-			  			<div class="home-bottom-text">
+   			<div class="col-twelve">
 
-			  				<h3 class="animate-intro">Hello visitor! </h3>
-				  			<h1 class="animate-intro">
-							I am Angéla. <br>
-							a Graphic & UI Designer 
-				  			</h1>	
+	   			<h5>Hello, visitor.</h5>
+	   			<h1>I'm Angela.</h1>
 
-							<ul class="home-section-links">
-								<li class="animate-intro">More <a href="#about" class="smoothscroll">About Me</a></li>
-								<li class="animate-intro">View <a href="#portfolio" class="smoothscroll">My Works</a></li>
-								<li class="animate-intro">Contact <a href="#contact" class="smoothscroll">By Email</a></li>								
-							</ul>
+	   			<p class="intro-position">
+	   			 	<span>Graphic Designer</span>
+	   				<span>UI Designer</span> 
+	   			</p>
 
-			  			</div> <!-- end home-bottom-text -->
-			   	</div> <!-- end col-twelve --> 
-		   	</div> <!-- end row --> 
-		   </div> <!-- end home-content-tablecell --> 		   
-		</div> <!-- end home-content-table -->
+	   			<a class="button stroke smoothscroll" href="#about" title="">Come closer</a>
 
-		<a href="#about" class="scroll-icon smoothscroll">		
-		   <span class="icon-DownArrow"></span>
-		</a>	
-   
-   </section> <!-- end home -->
-
-
-   <!-- about
-   ================================================== -->
-   <section id="about">
-
-   	<div class="about-profile-bg"></div>
-
-   	<div class="about-wrap">
-
-   		<div class="about-profile">
-
-   			<div class="about-profile-bg"></div>
-
-				<div class="intro">
-					<h3 class="animate-this">About</h3>
-	   			<h1 class="animate-this">More About Me.</h1>
-
-	   			<p class="lead animate-this">I am a Seasoned Graphic Designer and enthusiastic Web Developer Novice. 
-	   			</p>					
-				</div>   		
-
-   			<p class="animate-this">During <b>normal business hours</b> I create all kind of visual stuff for different companies and clients. I help them to make great first impressions online and offline with the power of polished, appealing graphic design. </p>
-
-   			<p class="animate-this"><b>At nights</b> I learn artificial and natural languages.
-   			</p>
-
-   			<p class="animate-this">
-   			One day I hope to return to my beloved forest in the mountains, where I can continue my passion and tend flowers and trees to cultivate beauty. 
-   			</p>
-
-   			<p>
-   				<a href="https://drive.google.com/file/d/0B8hA5QkwD4WHeFFyelk5WFdUckE/view" class="button full-width animate-this" target="_blank">My FULL portfolio</a>
-   				<a href="https://drive.google.com/file/d/0B8hA5QkwD4WHc0lEZnpSdy1oOHc/view" class="button button-primary full-width animate-this" target="_blank">My CV</a>
-   			</p>  			
-
-   		</div> <!-- end about-profile  -->
-
-   		<div class="about-services">
-
-				<div class="intro">
-	   			<h3 class="animate-this">Services</h3>
-	   			<h1 class="animate-this">It's what I do.</h1>
-
-	   			<p class="lead animate-this"> I am interested in commercial work, educational or documentary work.</p>
-   			</div>
-
-   			<ul class="services">
-   				<li class="item-branding animate-this">
-   					<div class="icon-wrap">
-   						<i class="fa fa-clipboard"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>Print Design</h4>
-   						<p>Flyers, posters, brochures, business cards, menu cards, wedding invitations, T-shirt design, book covers? No problem!
-   						</p>
-   					</div>   					
-   				</li>
-   				<li class="item-webdesign animate-this">
-   					<div class="icon-wrap">
-   						<i class="fa fa-html5"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>Web Design</h4>
-   						<p>Creating various website designs was part of my everyday routine covering almost every subject: fashion, science, entertainment, interior design, media and culture.
-   						</p>
-   					</div>   					
-   				</li>
-   				<li class="item-uiux animate-this">
-   					<div class="icon-wrap">
-   						<i class="fa fa-heart-o"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>UI Design</h4>
-   						<p>I can help to make the interface beautiful and accessible at the same time.
-   						</p>
-   					</div>   					
-   				</li>
-   				<li class="item-photography animate-this">
-   					<div class="icon-wrap">
-   						<i class="icon-Picture"></i>
-   					</div>
-   					<div class="service-item">
-   						<h4>Illustration</h4>
-   						<p>I started to draw as a 10 years old and I still love to practice. It is mostly a hobby, but sometimes I have artistic assignments including illustrations and other commissions.
-   						</p>
-   					</div>   					
-   				</li>
-   			</ul>   			
-
-   		</div> <!-- end about-services  -->   		
-
-   	</div> <!-- end about-wrap  -->
-
-   </section> <!-- end about -->
-
-
-   <!-- about
-   ================================================== -->
-   <section id="skills">
-
-   	<div class="overlay"></div>
-   	<div class="gradient-overlay"></div>
-   	
-   	<div class="row wide">
-   		<div class="col-skills">
-
-   			<div class="section-intro">
-   				<h3 class="animate-this">Skillset</h3>
-   			   <h1 class="animate-this">Tools of the trade:</h1>
+	   		</div>  
    			
-   			   <p class="animate-this">
-   			   Expert / Trainer level competency: <br/><mark>Adobe Photoshop</mark>, <mark>Adobe Illustrator</mark>, <mark>Adobe Acrobat</mark>, <mark>Corel Painter X3</mark>, <mark>Rebelle</mark><br/>
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
 
-   			   Skilled user level competency: <mark>Sony Vegas </mark>, <mark>Adobe InDesign</mark>, <mark>Adobe Muse</mark>, <mark>Microsoft Office Word</mark>, <mark>Sublime (editor)</mark>
-   			 
-   			</div>
+   	<ul class="intro-social">        
+         <li><a href="https://twitter.com/night_must_fall" target="_blank"><i class="fa fa-twitter"></i></a></li>
+         <!-- 
+         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+         <li><a href="#"><i class="fa fa-behance"></i></a></li>
 
-   			<ul class="skill-bars">
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent99"><span>99%</span></div>
-				   	<strong>Adobe Photoshop</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>Adobe Illustrator</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent85"><span>85%</span></div>
-				   	<strong>Adobe InDesign</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>HTML5</strong>
-				   </li>
-				   <li class="animate-this" data-animate="fadeInRight">
-				   	<div class="progress percent75"><span>75%</span></div>
-				   	<strong>CSS</strong>
-				   </li>   
-				   
-				</ul>
-   			
-   		</div> <!-- end col-six -->
-   	</div> <!-- end row wide -->
+         --> 
+      </ul> <!-- /intro-social -->      	
 
-   </section> <!-- end skills -->
+   </section> <!-- /intro -->
 
 
-
-   <!-- credentials REMOVED
+   <!-- about section
    ================================================== -->
-   
-   
+   <section id="about">  
 
-	<!-- portfolio
-   ================================================== -->
-   <section id="portfolio">
-
-   	<div class="row narrow section-intro with-bottom-sep">
+   	<div class="row section-intro">
    		<div class="col-twelve">
-   			<h3 class="animate-this">Portfolio</h3>
-	   		<h1 class="animate-this">See Some Of My  Projects</h1>  			
-	   		
-	   		<p class="lead animate-this">Click through the galleries below to see some examples of my work.
-(And please remember to check out my FULL portfolio in PDF format <a class="smoothscroll darklink" href="#about" title="about">above</a>!)
-			</p>	   			
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+
+   				<p class="lead">My name is Angéla (aka "Beau" or NightMustFall). During normal business hours I do visual stuff for different companies and clients. I help them to make great first impressions with the power of polished, appealing graphic design.</p>
+   			</div>   			
+
    		</div>   		
-   	</div> <!-- end row section-intro -->
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>
+
+</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Expert / Trainer level competency:</strong>
+   					<span>Adobe Photoshop, Adobe Illustrator, Adobe Acrobat, Rebelle</span>
+   				</li>
+   				<li>
+   					<strong>Skilled user level competency:</strong>
+   					<span>Sketch App, Adobe InDesign, Adobe Muse, Microsoft Office Word, Sublime </span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Graphic Designer veteran, Frontend Developer novice</span>
+   				</li>
+
+   				<li>
+   					<strong>Ask for a CV here:</strong>
+   					<span>the.night.must.fall@gmail.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>ADOBE PHOTOSHOP</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>ADOBE ILLUSTRATOR</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>ADOBE INDESIGN</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>HTML5 / CSS</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Sketch App</strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="https://drive.google.com/file/d/0B8hA5QkwD4WHeFFyelk5WFdUckE/view" title="Download My Full Portfolio" class="button button-primary large" target="_blank">My Full Portfolio</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Portfolio</h5>
+   			<h1>See Some Of My Projects</h1>
+
+   			<p class="lead">Click through the galleries below to see some examples of my work. (And please remember to check out my FULL portfolio in PDF format above!)</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
 
    	<div class="row portfolio-content">
+
    		<div class="col-twelve">
-   			<div id="folio-wrap" class="bricks-wrapper">					
 
-   				<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-skaterboy.jpg" data-sub-html="#01" > 	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/skaterboy.jpg" alt="Drink label">	                     
-	                     <div class="item-text">
-	                     	<span class="folio-types">
-		     					      Print  
-		     					   </span>
-		     					   <h3 class="folio-title">Drink label</h3>	     					   
-		     					</div>                                        
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/liberty.jpg" alt="Liberty">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">"Birnenschnaps" Drink label</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Graphic Design
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
 	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Web Design Concept (2016)</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Design
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
 	                  </a>
-	               </div> <!-- end item-wrap -->
-						
-						<div id="01" class='hide'>
-							<h4>"Birnenschnaps" Drink label</h4>
-							<p>This pear schnaps label is one of my earliest works. I enjoyed drawing swirls and spins. </p>
-						</div>
-	        		</div> <!-- end folio-item -->
+	               </div>
+	        		</div> <!-- /folio-item -->
 
-	        		<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-shutterbug.jpg" data-sub-html="#02"> 	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/shutterbug.jpg" alt="Website and Logo design">	                     
-	                     <div class="item-text">
-	                     	<span class="folio-types">
-		     					      Screen
-		     					   </span>
-		     					   <h3 class="folio-title">Website design</h3>  	     					   
-		     					</div>                                        
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/clouds.jpg"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Logo, Corporate Clothing</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Print and Branding
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
 	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/beetle.jpg" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">The Interactive Tour Guide of the Hunting Museum of Keszthely</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Mobile App
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
 	                  </a>
-	               </div> <!-- end item-wrap -->
+	               </div>
+	        		</div> <!-- /folio-item -->     
 
-	               <div id="02" class='hide'>
-							<h4>Web design</h4>
-							<p>Creating various website designs was part of my everyday routine
-covering almost every subject: fashion, science, entertainment, interior
-design, media and culture.</p>
-						</div>	               
-	        		</div> <!-- end folio-item -->
-
-	        		<div class="brick folio-item">
-	               <div class="item-wrap animate-this" data-src="images/portfolio/gallery/g-explore.jpg" data-sub-html="#03" >   	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/explore.jpg" alt="Mobile Application">	                     
-	                     <div class="item-text">	                     		     					    
-		     					   <span class="folio-types">
-		     					      UI/UX Design
-		     					   </span>
-		     					   <h3 class="folio-title">Mobile Application </h3>
-		     					</div>                                        
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Lighthouse</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
 	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/salad.jpg" alt="Salad">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Blind Magic</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Illustration
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
 	                  </a>
-	               </div> <!-- end item-wrap -->	
+	               </div>
+	        		</div> <!-- /folio-item -->   
 
-	               <div id="03" class='hide'>
-							<h4>The Interactive Tour Guide of the Hunting Museum of Keszthely</h4>
-							<p>The guiding system offers an exciting and attractive alternative to conventional audio guides or guide books. </p>
-						</div>               
-	        		</div> <!-- end folio-item -->
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
 
-					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-minimalismo.jpg"  data-sub-html="#04" >
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/minimalismo.jpg" alt="Minimalismo">	                     
-	                     <div class="item-text">	     					    
-		     					   <span class="folio-types">
-		     					      Screen and Print
-		     					   </span>
-		     					   <h3 class="folio-title">Zöldenfriss</h3>
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+				     	</div>      	
 
-	               <div id="04" class='hide'>
-							<h4>Logo, Corporate Clothing</h4>
-							<p>You can be small, but it doesn’t mean you can’t have big ideas!</p>
-						</div>  	               
-	        		</div> <!-- end folio-item -->
+					   <div class="description-box">
+					      <h4>"Birnenschnaps" Drink label</h4>		      
+					      <p>This pear schnaps label is one of my earliest works. I enjoyed drawing swirls and spins.</p>
 
-					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-bicycle.jpg"  data-sub-html="#05" >  	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/bicycle.jpg" alt="Bicycle">	                     
-	                     <div class="item-text">	     					    
-		     					   <span class="folio-types">
-		     					      Screen
-		     					   </span>
-		     					   <h3 class="folio-title">Webdesign</h3>
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->
+					      <div class="categories">Print Design</div>			               
+					   </div>
 
-	               <div id="05" class='hide'>
-							<h4>VARIO-REVCO SZÍNPOSTA Webdesign</h4>
-							<p>With a simple wireframe you can achieve stunning results if you use the
-right color combination, high quality images, and logical layout.</p>
-						</div>	               
-	        		</div> <!-- end folio-item -->
-	           
-					<div class="brick folio-item">
-	               <div class="item-wrap animate-this"  data-src="images/portfolio/gallery/g-salad.jpg"  data-sub-html="#06">     	
-	                  <a href="#" class="overlay">
-	                  	<img src="images/portfolio/salad.jpg" alt="Salad">	                     
-	                     <div class="item-text">	     					    
-		     					   <span class="folio-types">
-		     					      Drawing - Illustration
-		     					   </span>
-		     					   <h3 class="folio-title">BLIND MAGIC</h3>
-		     					</div>                                        
-	                  </a>
-	                  <a href="https://www.behance.net/" class='details-link' title="details">
-	                  	<i class="icon-UpRightArrow"></i>
-	                  </a>
-	               </div> <!-- end item-wrap -->
+			         <div class="link-box">  <!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
 
-	               <div id="06" class='hide'>
-							<h4>BLIND MAGIC</h4>
-							<p>“Blind magic“ is a series of pictures made by me for R.J.D. Anderson,
-a Canadian writer and Harry Potter enthusiast honoring her fanfiction
-revolving around the image of Severus Snape.</p>
-						</div>	               
-	        		</div> <!-- end folio-item -->   				
+				   </div> <!-- /modal-01 -->
 
-   			</div> <!-- end folio-wrap -->
-   		</div> <!-- end twelve -->
-   	</div> <!-- end portfolio-content -->   	
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
 
-   </section>  <!-- end portfolio -->
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Web Design Concept (2016)</h4>		      
+					      <p>Creating various website designs was part of my everyday routine covering almost every subject: fashion, science, entertainment, interior design, media and culture.</p>
+
+					      <div class="categories">Web Design</div>			               
+					   </div>
+
+			         <div class="link-box"><!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Logo, Corporate Clothing</h4>		      
+					      <p>You can be small, but it doesn’t mean you can’t have big ideas!</p>
+
+					      <div class="categories">Print Design</div>			               
+					   </div>
+
+			         <div class="link-box"><!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>The Interactive Tour Guide of the Hunting Museum of Keszthely</h4>		      
+					      <p>The guiding system offers an exciting and attractive alternative to conventional audio guides or guide books.</p>
+
+					      <div class="categories">Mobile Application</div>			               
+					   </div>
+
+			         <div class="link-box"><!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Lighthouse</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">  <!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>BLIND MAGIC</h4>		      
+					      <p>“Blind magic“ is a series of pictures made by me for R.J.D. Anderson, a Canadian writer and Harry Potter enthusiast honoring her fanfiction revolving around the image of Severus Snape.</p>
+
+					      <div class="categories">Illustration</div>			               
+					   </div>
+
+			         <div class="link-box">
+			         <div class="link-box">  <!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
 
 
-	<!-- stats
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+	<!-- CTA Section
    ================================================== -->
-   <section id="stats">
+	<section id="cta" class="grey-section">
+
+   	<div class="row cta-content">
+
+   		<div class="col-twelve section-ads">  
+
+	     		<h2 class="h01">If you want to see some drawings...</h2>
+
+		      <p class="lead">
+		      I’ve deleted my old portfolio due to the lack of energy and moved my <span>sketchbook to tumblr</span>. 
+I will post the newly updated works when I have a free time. 
+				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->	
+				</p>
+
+				<div class="action">
+			      <a class="button button-primary large" href="http://the-night-must-fall.tumblr.com/" target="_blank">My sketchbook</a>
+		      </div>		     	
+
+   		</div>
+
+   	</div> <!-- /cta-content -->
+
+   </section> <!-- /cta --> 
+
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Services</h5>
+   			<h1>What Can I Do For You?</h1>
+
+   			<p class="lead">I am interested in commercial, educational or documentary work.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Webdesign</h3>
+
+		            <p class="desc">Creating various website designs was part of my everyday routine covering almost every subject: fashion, science, entertainment, interior design, media and culture.
+	         		</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-window"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Print design</h3>  
+
+		            <p class="desc">Flyers, posters, brochures, business cards, menu cards, wedding invitations, T-shirt design, book covers? No problem!
+
+
+	         		</p>
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>	              
+
+	            <div class="service-content">
+
+	            	<h3>UI/UX Design</h3>
+
+		            <p class="desc">I can help to make the interface beautiful and accessible at the same time.
+
+
+	         		</p> 
+	         		
+	            </div>                
+
+				</div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-image"></i></span>	            
+
+	            <div class="service-content">
+
+	            	<h3>Illustration</h3>
+
+		            <p class="desc">I started to draw as a 10 years old and I still love to practice. It is mostly a hobby, but sometimes I have artistic assignments including illustrations and other commissions.
+	        			</p> 
+
+	            </div>	               
+
+			 
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+
+	<!-- stats Section
+   ================================================== -->
+
+   					<!-- stats Section eltuntetve
+   ================================================== 
+
+
+
+	<section id="stats" class="count-up">
 
 		<div class="row">
 			<div class="col-twelve">
-				<div class="block-1-4 block-tab-1-2 block-mob-full stats-list">
+
+				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+
+
+
 
 					<div class="bgrid stat">
+
 						<div class="icon-part">
-							<i class="icon-Briefcase"></i>
+							<i class="icon-pencil-ruler"></i>
 						</div>
+
+						<h3 class="stat-count">
+							500
+						</h3>
+
 						<h5 class="stat-title">
 							Projects Completed
 						</h5>
-						<h3 class="stat-count">430</h3>
-					</div> <!-- end stat -->					
+
+					</div> 				
+
+																	
 
 					<div class="bgrid stat">
-						<div class="icon-part">
-							<i class="icon-AddressBook"></i>
-						</div>
-						<h5 class="stat-title">
-							Books Read
-						</h5>
-						<h3 class="stat-count">980</h3>
-					</div> <!-- end stat -->
 
-					<div class="bgrid stat">
 						<div class="icon-part">
-							<i class="icon-Diploma1"></i>
+							<i class="icon-light-bulb"></i>
 						</div>
-						<h5 class="stat-title">
-							"Startups" Destroyed
-						</h5>
-						<h3 class="stat-count">1</h3>
-					</div> <!-- end stat -->									
 
-					<div class="bgrid stat">
-						<div class="icon-part">
-							<i class="icon-Idea"></i>
-						</div>
+						<h3 class="stat-count">
+							120
+						</h3>
+
 						<h5 class="stat-title">
 							Crazy Ideas
 						</h5>
-						<h3 class="stat-count">666</h3>
-					</div> <!-- end stat -->
-					
-				</div> <!-- end stats-list -->
-			</div> <!-- end col-twelve -->
-		</div> <!-- end row -->
 
-   </section> <!-- end stats -->
+					</div> 
 
 
-	<!-- contact
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-cup"></i>
+						</div>
+
+						<h3 class="stat-count">
+							1500
+						</h3>
+
+						<h5 class="stat-title">
+							Coffee Cups
+						</h5>
+
+					</div> 
+
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-clock"></i>
+						</div>
+
+						<h3 class="stat-count">
+							7200
+						</h3>
+
+						<h5 class="stat-title">
+							Hours
+						</h5>
+
+					</div> 
+
+
+
+
+				</div> 
+
+			</div> 
+		</div> 
+
+	</section> 
+
+
+
+					stats Section eltuntetve VÉGE
    ================================================== -->
-   <section id="contact">
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
 
-      <div class="overlay"></div>
-
-		<div class="row narrow section-intro">
+		<div class="row section-intro">
    		<div class="col-twelve">
-   			<h3 class="animate-this">Contact</h3>
-   			<h1 class="animate-this">Let’s make magic together! :)</h1> 
 
-   			<p class="lead animate-this">If you have any questions, or you just would like to say hi, <br/>send me a message. Please allow 1-2 business days for replies. </p>
+   			<h5>Contact</h5>
+   			<h1>Let’s make magic together! :)</h1>
+
+   			<p class="lead">If you have any questions, or just would like to say hi, 
+send me a message. Please allow 1-2 business days for replies.</p>
+
    		</div> 
-   	</div> <!-- end section-intro -->
+   	</div> <!-- /section-intro -->
 
    	<div class="row contact-form">
+
    		<div class="col-twelve">
 
-            <!-- form 
-            <form name="contactForm" id="contactForm" method="post">
-      			
+            <!-- form  eltuntetve
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
 
-                  <div class="form-field animate-this">
+                  <div class="form-field">
  						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
                   </div>
-                  <div class="form-field animate-this">
+                  <div class="form-field">
 	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
 	               </div>
-                  <div class="form-field animate-this">
+                  <div class="form-field">
 	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
 	               </div>                       
-                  <div class="form-field animate-this">
+                  <div class="form-field">
 	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
-	               </div> 
-
-                  <div class="form-field animate-this">
+	               </div>                      
+                 <div class="form-field">
                      <button class="submitform">Submit</button>
-
                      <div id="submit-loader">
                         <div class="text-loader">Sending...</div>                             
        				      <div class="s-loader">
@@ -544,80 +725,113 @@ revolving around the image of Severus Snape.</p>
 							</div>
                   </div>
 
-      			
-      		</form> Form End -->
+      			</fieldset>
+      		</form> form  eltuntetve VÉGE-->
 
             <!-- contact-warning -->
-            <div id="message-warning"></div> 
-
+            <div id="message-warning">            	
+            </div>            
             <!-- contact-success -->
       		<div id="message-success">
                <i class="fa fa-check"></i>Your message was sent, thank you!<br>
       		</div>
 
-         </div> <!-- end col-twelve -->   		
-   	</div> <!-- end row contact-form -->
+         </div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /contact-form -->
 
    	<div class="row contact-info">
 
    		<div class="col-four tab-full">
-   			<h5 class="animate-this">Where to find me</h5>
 
-   			<p class="animate-this">
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
             Twitter: @night_must_fall
             </p>
-   		</div> <!-- end col-four -->
+
+   		</div>
 
    		<div class="col-four tab-full collapse">
-   			<h5 class="animate-this">Email Me At</h5>
 
-   			<p class="animate-this">
-   				the.night.must.fall@gmail.com<br>
-   				Yeah, it's my super cool "hero" name. Very adult.
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>the.night.must.fall@gmail.com<br>
+			   	Yeah, it's my super cool "hero" name. Very adult.	     
 			   </p>
-   		</div> <!-- end col-four -->
+
+   		</div>
 
    		<div class="col-four tab-full">
-   			<h5 class="animate-this">Call Me At</h5>
 
-   			<p class="animate-this">
-			   	Mobile: (+36) 30 90 75 7 75<br>
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Mobile: (+36) 30 90 75 7 75
 			   </p>
-   		</div> <!-- end col-four -->
+
+   		</div>
    		
-   	</div> <!-- end row contact-info -->
+   	</div> <!-- /contact-info -->
 		
-	</section> <!-- end contact -->
+	</section> <!-- /contact -->
 
 
-	<!-- footer
+   <!-- footer
    ================================================== -->
-	<footer>
+
+   <footer>
      	<div class="row">
-<!-- social stuff
-     		<div class="col-twelve tab-full social">
+
+
+
+   <!-- footer social
+   ================================================== 
+     		<div class="col-six tab-full pull-right social">
+
      			<ul class="footer-social">        
-			      <li><a href="#">Facebook</a></li>
-			      <li><a href="#">Twitter</a></li>
-			      <li><a href="#">Behance</a></li>
-			      <li><a href="#">Dribble</a></li>
-			      <li><a href="#">Instagram</a></li>
-			   </ul> 	      		
+			      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+			      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+			      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			   </ul> 
+	      		
 	      </div>
-social stuff-->
-      	<div class="col-twelve tab-full">
+
+footer social VÉGE
+   ================================================== -->
+
+      	<div class="col-six tab-full">
 	      	<div class="copyright">
-		        	<span>© Copyright Angéla Horváth (design, graphics, code) 2017 and the team of PixelBuddha (effects, code) 2016.</span> 	
-		        	Special thanks for <i class="fa fa-github"></i> Github!	        	         	
-		      </div>		                  
-	      </div>      	
+       	
+		     </div>		                  
+	      	</div>
 
-      </div> <!-- end row -->
 
-      <div id="go-top">
-		   <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-UpArrow"></i></a>
-		</div>		
-   </footer>
+	      			<span>© Copyright Angela 2017.</span> 
+		        	<span> Special thanks to <a href="http://www.styleshout.com/" target="_blank">Erwin Aligam</a> (code) </span>
+		        	<span><a href="https://pixelbuddha.net/" target="_blank">PixelBuddha</a> (effects & ideas) </span>
+		        	<span>Ensomhet (gallery hack and moral support) </span>
+		            <span>and <a href="https://github.com/" target="_blank">Github</a> !  </span>   
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
 
    <div id="preloader"> 
     	<div id="loader"></div>
