@@ -8,70 +8,18 @@
 
 /*  TABLE OF CONTENTS
     ---------------------------
-    1. Loading / Opening
-    2. Parallax Mouse
-    3. Action Buttons
-    4. Scroll plugins
-    5. Newsletter
-    6. PhotoSwipe Gallery Init
+    1. Parallax Mouse
+    2. Action Buttons
+    3. Scroll plugins
+    4. Newsletter
+    5. PhotoSwipe Gallery Init
 */
-
-/* ------------------------------------- */
-/* 1. Loading / Opening ................ */
-/* ------------------------------------- */
-
-$(window).load(function(){
-    "use strict";
-
-    setTimeout(function(){
-        $('#preloader').velocity({
-
-            opacity: "0",
-
-            complete: function(){
-                $("#loading").velocity("transition.shrinkOut", {
-                    duration: 1000,
-                    easing: [0.7,0,0.3,1],
-                }); 
-            }
-        });
-
-    },1000);
-
-    setTimeout(function(){
-        $('#home-wrap').velocity("transition.fadeIn", {
-
-            opacity : "1",
-
-            complete: function(){
-
-            setTimeout(function() {
-                $('.text-intro').each(function(i) {
-                    (function(self) {
-                        setTimeout(function() {
-                            $(self).addClass('animated-middle fadeInUp').removeClass('opacity-0');
-                        },(i*150)+150);
-                        })(this);
-                    });
-                }, 1200);
-            }
-
-        },
-
-        {
-            duration: 1000,
-            easing: [0.7,0,0.3,1],
-        });
-        
-    },0);
-
-});
 
 $(document).ready(function(){
     "use strict";
 
     /* ------------------------------------- */
-    /* 2. Parallax Mouse ................... */
+    /* 1. Parallax Mouse ................... */
     /* ------------------------------------- */
 
     // var mouseX, mouseY;
@@ -96,7 +44,7 @@ $(document).ready(function(){
     // });
 
     /* ------------------------------------- */
-    /* 3. Action Buttons ................... */
+    /* 2. Action Buttons ................... */
     /* ------------------------------------- */
 
     // Actions when user clicks on More Informations
@@ -203,7 +151,7 @@ $(document).ready(function(){
     });
 
     /* ------------------------------------- */
-    /* 4. Scroll plugins ................... */
+    /* 3. Scroll plugins ................... */
     /* ------------------------------------- */
 
     $(function() {
@@ -262,7 +210,7 @@ $(document).ready(function(){
     }
 
     /* ------------------------------------- */
-    /* 5. Newsletter ........................ */
+    /* 4. Newsletter ........................ */
     /* ------------------------------------- */
 
     $("#notifyMe").notifyMe();
@@ -278,7 +226,7 @@ $(document).ready(function(){
     })();
 
     /* ------------------------------------- */
-    /* 6. PhotoSwipe Gallery Init .......... */
+    /* 5. PhotoSwipe Gallery Init .......... */
     /* ------------------------------------- */
 
     var initPhotoSwipeFromDOM = function(gallerySelector) {

@@ -99,44 +99,9 @@ $(document).ready(function(){
     /* 3. Action Buttons ................... */
     /* ------------------------------------- */
 
-    // Actions when user clicks on More Informations
-    $('#open-more-info').on( "click", function() {
-
-                $("#info-wrap").toggleClass("show-info");
-                $("#home-wrap").toggleClass("hide-left");
-           $(".global-overlay").toggleClass("hide-overlay");
-             $("#first-inside").toggleClass("hide-top");
-            $("#second-inside").toggleClass("hide-bottom");
-                $("#back-side").toggleClass("show-side");
-             $(".hide-content").toggleClass("open-hide");
-          $("#close-more-info").toggleClass("hide-close");
-        $('.command-info-wrap').toggleClass('show-command');
-         $('.mCSB_scrollTools').toggleClass('mCSB_scrollTools-left');
-
+    $('a#go-contact').on( "click", function() {
         setTimeout(function() {
-            $("#mcs_container").mCustomScrollbar("scrollTo", "#info-wrap",{
-                scrollInertia:500,
-                callbacks:false
-            });
-        }, 350);
-    });
-
-    // Actions when user clicks on the closing button
-    $('.to-close').on( "click", function() {
-
-                $("#info-wrap").removeClass("show-info");
-                $("#home-wrap").removeClass("hide-left");
-           $(".global-overlay").removeClass("hide-overlay");
-             $("#first-inside").toggleClass("hide-top");
-            $("#second-inside").toggleClass("hide-bottom");
-                $("#back-side").toggleClass("show-side");
-             $(".hide-content").toggleClass("open-hide");
-          $("#close-more-info").toggleClass("hide-close");
-        $('.command-info-wrap').toggleClass('show-command');
-         $('.mCSB_scrollTools').toggleClass('mCSB_scrollTools-left');
-
-        setTimeout(function() {
-            $("#mcs_container").mCustomScrollbar("scrollTo", "#info-wrap",{
+            $("#mcs_container").mCustomScrollbar("scrollTo", "#contact-anchor",{
                 scrollInertia:500,
                 callbacks:false
             });
@@ -223,7 +188,7 @@ $(document).ready(function(){
         if (ifTouchDevices){
             $('body').addClass('scroll-touch');
 
-            $('a#open-more-info').on( "click", function() {
+            $('a#go-contact').on( "click", function() {
                 event.preventDefault();
                 var target = "#" + this.getAttribute('data-target');
                 $('body').animate({
