@@ -1,490 +1,291 @@
-/*
-* LEGEND - Iconic Coming Soon Template
-* Build Date: January 2016
-* Author: Madeon08
-* Copyright (C) 2016 Madeon08
-* This is a premium product available exclusively here : http://themeforest.net/user/Madeon08/portfolio
-*/
+/** 
+ * ===================================================================
+ * main js
+ *
+ * ------------------------------------------------------------------- 
+ */ 
 
-/*  TABLE OF CONTENTS
-    ---------------------------
-    1. Loading / Opening
-    2. Parallax Mouse
-    3. Action Buttons
-    4. Scroll plugins
-    5. Newsletter
-    6. PhotoSwipe Gallery Init
-*/
+(function($) {
 
-/* ------------------------------------- */
-/* 1. Loading / Opening ................ */
-/* ------------------------------------- */
+	"use strict";
 
-$(window).load(function(){
-    "use strict";
+	/*---------------------------------------------------- */
+	/* Preloader
+	------------------------------------------------------ */ 
+   $(window).load(function() {
 
-    setTimeout(function(){
-        $('#preloader').velocity({
+      // will first fade out the loading animation 
+    	$("#loader").fadeOut("slow", function(){
 
-            opacity: "0",
+        // will fade out the whole DIV that covers the website.
+        $("#preloader").delay(300).fadeOut("slow");
 
-            complete: function(){
-                $("#loading").velocity("transition.shrinkOut", {
-                    duration: 1000,
-                    easing: [0.7,0,0.3,1],
-                }); 
-            }
-        });
+      });       
 
-    },1000);
+  	})
 
-    setTimeout(function(){
-        $('#home-wrap').velocity("transition.fadeIn", {
 
-            opacity : "1",
+  	/*---------------------------------------------------- */
+  	/* FitText Settings
+  	------------------------------------------------------ */
+  	setTimeout(function() {
 
-            complete: function(){
+   	$('#intro h1').fitText(1, { minFontSize: '42px', maxFontSize: '84px' });
 
-            setTimeout(function() {
-                $('.text-intro').each(function(i) {
-                    (function(self) {
-                        setTimeout(function() {
-                            $(self).addClass('animated-middle fadeInUp').removeClass('opacity-0');
-                        },(i*150)+150);
-                        })(this);
-                    });
-                }, 1200);
-            }
+  	}, 100);
 
-        },
 
-        {
-            duration: 1000,
-            easing: [0.7,0,0.3,1],
-        });
-        
-    },0);
+	/*---------------------------------------------------- */
+	/* FitVids
+	------------------------------------------------------ */ 
+  	$(".fluid-video-wrapper").fitVids();
 
-});
 
-$(document).ready(function(){
-    "use strict";
-
-    /* ------------------------------------- */
-    /* 2. Parallax Mouse ................... */
-    /* ------------------------------------- */
-
-    // var mouseX, mouseY;
-    // var traX, traY;
-
-    // $(document).mousemove(function(e){
-    //     mouseX = e.pageX;
-    //     mouseY = e.pageY;
-
-    //     traX = (e.pageX * -1 / 20);
-    //     traY = (e.pageY * -1 / 20);
-
-    //     console.log(traX);
-
-    //     $(".overlay").css({
-    //         '-webkit-transform': 'translate3d(' + traX + 'px,' + traY + 'px, 0) scale(1)',
-    //         '-moz-transform': 'translate3d(' + traX + 'px,' + traY + 'px, 0) scale(1)',
-    //         '-ms-transform': 'translate3d(' + traX + 'px,' + traY + 'px, 0) scale(1)',
-    //         '-o-transform': 'translate3d(' + traX + 'px,' + traY + 'px, 0) scale(1)',
-    //         'transform': 'translate3d(' + traX + 'px,' + traY + 'px, 0) scale(1)'
-    //     });
-    // });
-
-    /* ------------------------------------- */
-    /* 3. Action Buttons ................... */
-    /* ------------------------------------- */
-
-    // Actions when user clicks on More Informations
-    $('#open-more-info').on( "click", function() {
-
-                $("#info-wrap").toggleClass("show-info");
-                $("#home-wrap").toggleClass("hide-left");
-           $(".global-overlay").toggleClass("hide-overlay");
-             $("#first-inside").toggleClass("hide-top");
-            $("#second-inside").toggleClass("hide-bottom");
-                $("#back-side").toggleClass("show-side");
-             $(".hide-content").toggleClass("open-hide");
-          $("#close-more-info").toggleClass("hide-close");
-        $('.command-info-wrap').toggleClass('show-command');
-         $('.mCSB_scrollTools').toggleClass('mCSB_scrollTools-left');
-
-        setTimeout(function() {
-            $("#mcs_container").mCustomScrollbar("scrollTo", "#info-wrap",{
-                scrollInertia:500,
-                callbacks:false
-            });
-        }, 350);
+	/*---------------------------------------------------- */
+	/* Owl Carousel
+	------------------------------------------------------ */ 
+	$("#owl-slider").owlCarousel({
+        navigation: false,
+        pagination: true,
+        itemsCustom : [
+	        [0, 1],
+	        [700, 2],
+	        [960, 3]
+	     ],
+        navigationText: false
     });
 
-    // Actions when user clicks on the closing button
-    $('.to-close').on( "click", function() {
 
-                $("#info-wrap").removeClass("show-info");
-                $("#home-wrap").removeClass("hide-left");
-           $(".global-overlay").removeClass("hide-overlay");
-             $("#first-inside").toggleClass("hide-top");
-            $("#second-inside").toggleClass("hide-bottom");
-                $("#back-side").toggleClass("show-side");
-             $(".hide-content").toggleClass("open-hide");
-          $("#close-more-info").toggleClass("hide-close");
-        $('.command-info-wrap').toggleClass('show-command');
-         $('.mCSB_scrollTools').toggleClass('mCSB_scrollTools-left');
+	/*----------------------------------------------------- */
+	/* Alert Boxes
+  	------------------------------------------------------- */
+	$('.alert-box').on('click', '.close', function() {
+	  $(this).parent().fadeOut(500);
+	});	
 
-        setTimeout(function() {
-            $("#mcs_container").mCustomScrollbar("scrollTo", "#info-wrap",{
-                scrollInertia:500,
-                callbacks:false
-            });
-        }, 350);
-    });
 
-    // Youtube Variant
+	/*----------------------------------------------------- */
+	/* Stat Counter
+  	------------------------------------------------------- */
+   var statSection = $("#stats"),
+       stats = $(".stat-count");
 
-    $('.expand-player').on( "click", function() {
+   statSection.waypoint({
 
-        $('#home-wrap').velocity({
+   	handler: function(direction) {
 
-                opacity : "0",
+      	if (direction === "down") {       		
 
-            },
+			   stats.each(function () {
+				   var $this = $(this);
 
-            {
-                duration: 0,
-                easing: [0.7,0,0.3,1],
-                delay: 0,
+				   $({ Counter: 0 }).animate({ Counter: $this.text() }, {
+				   	duration: 4000,
+				   	easing: 'swing',
+				   	step: function (curValue) {
+				      	$this.text(Math.ceil(curValue));
+				    	}
+				  	});
+				});
 
-                complete: function(){
+       	} 
 
-                    $('.global-overlay').velocity({
-                        opacity : "0",
-                    },
+       	// trigger once only
+       	this.destroy();      	
 
-                    {
-                        duration: 0,
-                        easing: [0.7,0,0.3,1],
-                        delay: 0,
-                    });
-                }
-        });
-    });
+		},
+			
+		offset: "90%"
+	
+	});	
 
-    $('.compress-player').on( "click", function() {
 
-        $('#home-wrap').velocity({
+	/*---------------------------------------------------- */
+	/*	Masonry
+	------------------------------------------------------ */
+	var containerProjects = $('#folio-wrapper');
 
-            opacity : "1",
+	containerProjects.imagesLoaded( function() {
 
-        },
+		containerProjects.masonry( {		  
+		  	itemSelector: '.folio-item',
+		  	resize: true 
+		});
 
-        {
-            duration: 0,
-            easing: [0.7,0,0.3,1],
-            delay: 0,
+	});
 
-            complete: function(){
 
-                    $('.global-overlay').velocity({
-                        opacity : "1",
-                    },
+	/*----------------------------------------------------*/
+	/*	Modal Popup
+	------------------------------------------------------*/
+   $('.item-wrap a').magnificPopup({
 
-                    {
-                        duration: 0,
-                        easing: [0.7,0,0.3,1],
-                        delay: 0,
-                    });
-                }
+      type:'inline',
+      fixedContentPos: false,
+      removalDelay: 300,
+      showCloseBtn: false,
+      mainClass: 'mfp-fade'
 
-        });
-    });
+   });
 
-    /* ------------------------------------- */
-    /* 4. Scroll plugins ................... */
-    /* ------------------------------------- */
+   $(document).on('click', '.popup-modal-dismiss', function (e) {
+   	e.preventDefault();
+   	$.magnificPopup.close();
+   });
 
-    $(function() {
-        $('body').bind('mousewheel', function(event) {
-          event.preventDefault();
-          var scrollTop = this.scrollTop;
-          this.scrollTop = (scrollTop + ((event.deltaY * event.deltaFactor) * -1));
-          //console.log(event.deltaY, event.deltaFactor, event.originalEvent.deltaMode, event.originalEvent.wheelDelta);
-        });
-    });
+	
+	/*-----------------------------------------------------*/
+  	/* Navigation Menu
+   ------------------------------------------------------ */  
+   var toggleButton = $('.menu-toggle'),
+       nav = $('.main-navigation');
 
-    var ifTouchDevices = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|Windows Phone)/);
+   // toggle button
+   toggleButton.on('click', function(e) {
 
-    // ScrollBar on Desktop, not on Touch devices for a perfect ergonomy
-    function scrollbar(){
+		e.preventDefault();
+		toggleButton.toggleClass('is-clicked');
+		nav.slideToggle();
 
-        if (ifTouchDevices){
-            $('body').addClass('scroll-touch');
+	});
 
-            $('a#open-more-info').on( "click", function() {
-                event.preventDefault();
-                var target = "#" + this.getAttribute('data-target');
-                $('body').animate({
-                    scrollTop: $(target).offset().top
-                }, 500);
-            });
-        } 
+   // nav items
+  	nav.find('li a').on("click", function() {   
 
-        else {
-            $('body').mCustomScrollbar({
-                scrollInertia: 150,
-                axis            :"y",
+   	// update the toggle button 		
+   	toggleButton.toggleClass('is-clicked'); 
+   	// fadeout the navigation panel
+   	nav.fadeOut();   		
+   	     
+  	});
 
-                callbacks:{
-                    whileScrolling:function(){
-                        var pos=this.mcs.top;
-                        if(pos<=-200){
-                            $('.to-scroll').addClass('hide-scroll');
-                        }else{
-                            $('.to-scroll').removeClass('hide-scroll');
-                        }
-                    }
-                }
-        
-            });  
-        }
-    }
+
+   /*---------------------------------------------------- */
+  	/* Highlight the current section in the navigation bar
+  	------------------------------------------------------ */
+	var sections = $("section"),
+	navigation_links = $("#main-nav-wrap li a");	
+
+	sections.waypoint( {
+
+       handler: function(direction) {
+
+		   var active_section;
+
+			active_section = $('section#' + this.element.id);
+
+			if (direction === "up") active_section = active_section.prev();
+
+			var active_link = $('#main-nav-wrap a[href="#' + active_section.attr("id") + '"]');			
+
+         navigation_links.parent().removeClass("current");
+			active_link.parent().addClass("current");
+
+		}, 
+
+		offset: '25%'
+	});
+
+
+	/*---------------------------------------------------- */
+  	/* Smooth Scrolling
+  	------------------------------------------------------ */
+  	$('.smoothscroll').on('click', function (e) {
+	 	
+	 	e.preventDefault();
+
+   	var target = this.hash,
+    	$target = $(target);
+
+    	$('html, body').stop().animate({
+       	'scrollTop': $target.offset().top
+      }, 800, 'swing', function () {
+      	window.location.hash = target;
+      });
+
+  	});  
   
-    scrollbar();
 
-    // Tooltips
-    if (window.matchMedia("(min-width: 1025px)").matches) { 
-            
-        $(function () { $("[data-toggle='tooltip']").tooltip(); });
-
-    }
-
-    /* ------------------------------------- */
-    /* 5. Newsletter ........................ */
-    /* ------------------------------------- */
-
-    $("#notifyMe").notifyMe();
-
-    (function() {
-
-        var dlgtrigger = document.querySelector( '[data-dialog]' ),
-            somedialog = document.getElementById( dlgtrigger.getAttribute( 'data-dialog' ) ),
-            dlg = new DialogFx( somedialog );
-
-        dlgtrigger.addEventListener( 'click', dlg.toggle.bind(dlg) );
-
-    })();
-
-    /* ------------------------------------- */
-    /* 6. PhotoSwipe Gallery Init .......... */
-    /* ------------------------------------- */
-
-    var initPhotoSwipeFromDOM = function(gallerySelector) {
-
-    // parse slide data (url, title, size ...) from DOM elements 
-    // (children of gallerySelector)
-    var parseThumbnailElements = function(el) {
-        var thumbElements = el.childNodes,
-            numNodes = thumbElements.length,
-            items = [],
-            figureEl,
-            linkEl,
-            size,
-            item;
-
-        for(var i = 0; i < numNodes; i++) {
-
-            figureEl = thumbElements[i]; // <figure> element
-
-            // include only element nodes 
-            if(figureEl.nodeType !== 1) {
-                continue;
-            }
-
-            linkEl = figureEl.children[0]; // <a> element
-
-            size = linkEl.getAttribute('data-size').split('x');
-
-            // create slide object
-            item = {
-                src: linkEl.getAttribute('href'),
-                w: parseInt(size[0], 10),
-                h: parseInt(size[1], 10)
-            };
+   /*---------------------------------------------------- */
+	/*  Placeholder Plugin Settings
+	------------------------------------------------------ */ 
+	$('input, textarea, select').placeholder()  
 
 
+  	/*---------------------------------------------------- */
+	/*	contact form
+	------------------------------------------------------ */
 
-            if(figureEl.children.length > 1) {
-                // <figcaption> content
-                item.title = figureEl.children[1].innerHTML; 
-            }
+	/* local validation */
+	$('#contactForm').validate({
 
-            if(linkEl.children.length > 0) {
-                // <img> thumbnail element, retrieving thumbnail url
-                item.msrc = linkEl.children[0].getAttribute('src');
-            } 
+		/* submit via ajax */
+		submitHandler: function(form) {
 
-            item.el = figureEl; // save link to element for getThumbBoundsFn
-            items.push(item);
-        }
+			var sLoader = $('#submit-loader');
 
-        return items;
-    };
+			$.ajax({      	
 
-    // find nearest parent element
-    var closest = function closest(el, fn) {
-        return el && ( fn(el) ? el : closest(el.parentNode, fn) );
-    };
+		      type: "POST",
+		      url: "inc/sendEmail.php",
+		      data: $(form).serialize(),
+		      beforeSend: function() { 
 
-    // triggers when user clicks on thumbnail
-    var onThumbnailsClick = function(e) {
-        e = e || window.event;
-        e.preventDefault ? e.preventDefault() : e.returnValue = false;
+		      	sLoader.fadeIn(); 
 
-        var eTarget = e.target || e.srcElement;
+		      },
+		      success: function(msg) {
 
-        // find root element of slide
-        var clickedListItem = closest(eTarget, function(el) {
-            return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
-        });
+	            // Message was sent
+	            if (msg == 'OK') {
+	            	sLoader.fadeOut(); 
+	               $('#message-warning').hide();
+	               $('#contactForm').fadeOut();
+	               $('#message-success').fadeIn();   
+	            }
+	            // There was an error
+	            else {
+	            	sLoader.fadeOut(); 
+	               $('#message-warning').html(msg);
+		            $('#message-warning').fadeIn();
+	            }
 
-        if(!clickedListItem) {
-            return;
-        }
+		      },
+		      error: function() {
 
-        // find index of clicked item by looping through all child nodes
-        // alternatively, you may define index via data- attribute
-        var clickedGallery = clickedListItem.parentNode,
-            childNodes = clickedListItem.parentNode.childNodes,
-            numChildNodes = childNodes.length,
-            nodeIndex = 0,
-            index;
+		      	sLoader.fadeOut(); 
+		      	$('#message-warning').html("Something went wrong. Please try again.");
+		         $('#message-warning').fadeIn();
 
-        for (var i = 0; i < numChildNodes; i++) {
-            if(childNodes[i].nodeType !== 1) { 
-                continue; 
-            }
+		      }
 
-            if(childNodes[i] === clickedListItem) {
-                index = nodeIndex;
-                break;
-            }
-            nodeIndex++;
-        }
+	      });     		
+  		}
+
+	});
 
 
+ 	/*----------------------------------------------------- */
+  	/* Back to top
+   ------------------------------------------------------- */ 
+	var pxShow = 300; // height on which the button will show
+	var fadeInTime = 400; // how slow/fast you want the button to show
+	var fadeOutTime = 400; // how slow/fast you want the button to hide
+	var scrollSpeed = 300; // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
 
-        if(index >= 0) {
-            // open PhotoSwipe if valid index found
-            openPhotoSwipe( index, clickedGallery );
-        }
-        return false;
-    };
+   // Show or hide the sticky footer button
+	jQuery(window).scroll(function() {
 
-    // parse picture index and gallery index from URL (#&pid=1&gid=2)
-    var photoswipeParseHash = function() {
-        var hash = window.location.hash.substring(1),
-        params = {};
+		if (!( $("#header-search").hasClass('is-visible'))) {
 
-        if(hash.length < 5) {
-            return params;
-        }
+			if (jQuery(window).scrollTop() >= pxShow) {
+				jQuery("#go-top").fadeIn(fadeInTime);
+			} else {
+				jQuery("#go-top").fadeOut(fadeOutTime);
+			}
 
-        var vars = hash.split('&');
-        for (var i = 0; i < vars.length; i++) {
-            if(!vars[i]) {
-                continue;
-            }
-            var pair = vars[i].split('=');  
-            if(pair.length < 2) {
-                continue;
-            }           
-            params[pair[0]] = pair[1];
-        }
+		}		
 
-        if(params.gid) {
-            params.gid = parseInt(params.gid, 10);
-        }
+	});		
 
-        return params;
-    };
-
-    var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
-        var pswpElement = document.querySelectorAll('.pswp')[0],
-            gallery,
-            options,
-            items;
-
-        items = parseThumbnailElements(galleryElement);
-
-        // define options (if needed)
-        options = {
-
-            // define gallery index (for URL)
-            galleryUID: galleryElement.getAttribute('data-pswp-uid'),
-
-            getThumbBoundsFn: function(index) {
-                // See Options -> getThumbBoundsFn section of documentation for more info
-                var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
-                    pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
-                    rect = thumbnail.getBoundingClientRect(); 
-
-                return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
-            }
-
-        };
-
-        // PhotoSwipe opened from URL
-        if(fromURL) {
-            if(options.galleryPIDs) {
-                // parse real index when custom PIDs are used 
-                // http://photoswipe.com/documentation/faq.html#custom-pid-in-url
-                for(var j = 0; j < items.length; j++) {
-                    if(items[j].pid === index) {
-                        options.index = j;
-                        break;
-                    }
-                }
-            } else {
-                // in URL indexes start from 1
-                options.index = parseInt(index, 10) - 1;
-            }
-        } else {
-            options.index = parseInt(index, 10);
-        }
-
-        // exit if index not found
-        if( isNaN(options.index) ) {
-            return;
-        }
-
-        if(disableAnimation) {
-            options.showAnimationDuration = 0;
-        }
-
-        // Pass data to PhotoSwipe and initialize it
-        gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
-        gallery.init();
-    };
-
-    // loop through all gallery elements and bind events
-    var galleryElements = document.querySelectorAll( gallerySelector );
-
-    for(var i = 0, l = galleryElements.length; i < l; i++) {
-        galleryElements[i].setAttribute('data-pswp-uid', i+1);
-        galleryElements[i].onclick = onThumbnailsClick;
-    }
-
-    // Parse URL and open gallery if it contains #&pid=3&gid=1
-    var hashData = photoswipeParseHash();
-    if(hashData.pid && hashData.gid) {
-        openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
-    }
-};
-
-// execute above function
-initPhotoSwipeFromDOM('.my-gallery');
-
-});
+})(jQuery);

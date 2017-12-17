@@ -1,551 +1,851 @@
 <!DOCTYPE html>
-<html lang="en-us" class="no-js">
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-	<head>
-		<meta charset="utf-8">
-        <title>Angela's portfolio site</title>
-        <meta name="Angela's portfolio site" content="Angela's portfolio site.">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Angela" content="Angela's portfolio site">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Angela</title>
+	<meta name="description" content="Angela's portfolio site">  
+	<meta name="author" content="Angela's portfolio site">
 
-        <!-- ================= Favicon ================== -->
-        <!-- Standard -->
-        <link rel="shortcut icon" href="img/favicon.png">
-        <!-- Retina iPad Touch Icon-->
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
-        <!-- Retina iPhone Touch Icon-->
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
-        <!-- Standard iPad Touch Icon--> 
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
-        <!-- Standard iPhone Touch Icon--> 
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- ============== Resources style ============== -->
-        <link rel="stylesheet" href="css/style.css" />
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-		<!-- Modernizr runs quickly on page load to detect features -->
-		<script src="js/modernizr.custom.js"></script>
-	</head>
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html">Angela</a>
+		      </div>		      
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+									
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+
+   			<div class="col-twelve">
+
+	   			<h5>Hello, visitor.</h5>
+	   			<h1>I'm Angela.</h1>
+
+	   			<p class="intro-position">
+	   			 	<span>I’ve been designing things for 9 years. </span>
+	   				<span>I work primarily with Photoshop, Illustrator, InDesign and Sublime Editor.
+</span> 
+<span>I have intermediate knowledge of HTML, CSS and basic JavaScript for rapid prototyping.
+</span> 
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">Come closer</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">        
+         <li><a href="https://twitter.com/night_must_fall" target="_blank"><i class="fa fa-twitter"></i></a></li>
+         <!-- 
+         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+         <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+         <li><a href="#"><i class="fa fa-behance"></i></a></li>
+
+         --> 
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
+
+
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+
+   	<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/profile-pic.jpg" alt="Profile Picture">
+
+   				<p class="lead">My name is <i>Angéla</i> (aka <i>"Beau" </i>or <i>"NightMustFall"</i>). During normal business hours I do visual stuff for different companies and clients. I help them to make great first impressions with the power of polished, appealing graphic design.</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>
+
+</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Expert / Trainer level competency:</strong>
+   					<span>Adobe Photoshop, Adobe Illustrator, Adobe Acrobat, Rebelle</span>
+   				</li>
+   				<li>
+   					<strong>Skilled user level competency:</strong>
+   					<span>Sketch App, Adobe InDesign, Adobe Muse, Microsoft Office Word, Sublime </span>
+   				</li>
+   				<li>
+   					<strong>Profession and interests:</strong>
+   					<span>Graphic Designer veteran, Frontend Developer novice, Hobbyist illustrator.</span>
+   				</li>
+
+   				<li>
+   					<strong>Ask for a CV here:</strong>
+   					<span>the.night.must.fall@gmail.com</span>
+   				</li>
+
+   			</ul> <!-- /info-list -->
+
+   		</div>
+
+   		<div class="col-six tab-full">
+
+   			<h3>Skills</h3>
+   			
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent100"><span>100%</span></div>
+				   	<strong>ADOBE PHOTOSHOP</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>ADOBE ILLUSTRATOR</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>ADOBE INDESIGN</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent75"><span>75%</span></div>
+				   	<strong>HTML5 / CSS</strong>
+				   </li>
+				   <li>
+
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>Sketch App</strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   			<a href="https://drive.google.com/file/d/0B8hA5QkwD4WHeFFyelk5WFdUckE/view" title="Download My Full Portfolio" class="button button-primary large" target="_blank">My Full Portfolio</a>
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
 	
-	<body>
 
-		<!-- Page preloader -->
-		<div id="loading">
-			<div id="preloader">
-				<span></span>
-				<span></span>
-			</div>
-		</div>
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
 
-		<!-- Overlay -->
-		<div class="global-overlay">
-			<div class="overlay">
+		<div class="row section-intro">
+   		<div class="col-twelve">
 
-				<!-- Lines Overlay -->
-				<div class="overlay-dash"></div>
+   			<h5>Portfolio</h5>
+   			<h1>See Some Of My Projects</h1>
 
-			</div>
-		</div>
+   			<p class="lead">Click through the galleries below to see some examples of my work. (And please remember to check out my FULL portfolio in PDF format above!)</p>
 
-		<!-- START - Home Part -->
-		<section id="home-wrap">
+   		</div>   		
+   	</div> <!-- /section-intro--> 
 
-			<!-- Stars Overlay - Uncomment the next 3 lines to activate the effect-->
-			 <div id='stars'></div>
-			<div id='stars2'></div>
-			<div id='stars3'></div> 
+   	<div class="row portfolio-content">
 
-			<div class="content">
+   		<div class="col-twelve">
 
-				<!-- Your logo -->
-				<img src="img/logo.png" alt="I am a Graphic Designer with 9+ years of experience." class="brand-logo text-intro opacity-0" />
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
 
-				<h1 class="text-intro opacity-0"><span class="polyfy-title">Hi, it's Angéla!
- </span></h1>
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/liberty.jpg" alt="Liberty">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">"Birnenschnaps" Drink label</h3>	     					    
+		     					    	 <span class="folio-types">
+		     					       	  Graphic Design
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
 
-				<p class="text-intro opacity-0">
-				I’ve been designing things for 9 years. <br>
-				I work primarily with Photoshop, Illustrator, InDesign and Sublime Editor.<br>  I have intermediate knowledge of HTML, CSS and basic JavaScript for rapid prototyping.
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Web Design Concept (2016)</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Design
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/clouds.jpg"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Logo, Corporate Clothing</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Print and Branding
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/beetle.jpg" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">The Interactive Tour Guide of the Hunting Museum of Keszthely</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Mobile App
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Web Design Concept (2016)</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Web Development
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/portfolio/salad.jpg" alt="Salad">
+	                  <a href="#modal-06" class="overlay">
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Blind Magic</h3>	     					    
+		     					    	<span class="folio-types">
+		     					       	  Illustration
+		     					      </span>		     		
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->   
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>"Birnenschnaps" Drink label</h4>		      
+					      <p>This pear schnaps label is one of my earliest works. I enjoyed drawing swirls and spins.</p>
+
+					      <div class="categories">Print Design</div>			               
+					   </div>
+
+			         <div class="link-box">  <!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+
+				   <div id="modal-02" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Web Design Concept (2016)</h4>		      
+					      <p>Creating various website designs was part of my everyday routine covering almost every subject: fashion, science, entertainment, interior design, media and culture.</p>
+
+					      <div class="categories">Web Design</div>			               
+					   </div>
+
+			         <div class="link-box"><!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-02 -->
+
+				   <div id="modal-03" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Logo, Corporate Clothing</h4>		      
+					      <p>You can be small, but it doesn’t mean you can’t have big ideas!</p>
+
+					      <div class="categories">Print Design</div>			               
+					   </div>
+
+			         <div class="link-box"><!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-03 -->
+
+				   <div id="modal-04" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>The Interactive Tour Guide of the Hunting Museum of Keszthely</h4>		      
+					      <p>The guiding system offers an exciting and attractive alternative to conventional audio guides or guide books.</p>
+
+					      <div class="categories">Mobile Application</div>			               
+					   </div>
+
+			         <div class="link-box"><!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-04 -->
+
+				   <div id="modal-05" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Web Design Concept (2016)</h4>		      
+					      <p>Sometimes rigorous analysis must be done before proceeding to the design stage, and then numerous tests done to optimize the site as per best standards so that the competitive edge is maintained.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">  <!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-05 -->
+
+				   <div id="modal-06" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-salad.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>BLIND MAGIC</h4>		      
+					      <p>“Blind magic“ is a series of pictures made by me for R.J.D. Anderson, a Canadian writer and Harry Potter enthusiast honoring her fanfiction revolving around the image of Severus Snape.</p>
+
+					      <div class="categories">Illustration</div>			               
+					   </div>
+
+			         <div class="link-box">
+			         <div class="link-box">  <!-- részletek link eltuntetve
+			            <a href="#">Details</a>      --> 
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-06 -->
+
+
+				   <!-- modal popups - end
+	            ============================================================= -->
+
+	         </div> <!-- /portfolio-wrapper --> 
+
+   		</div>  <!-- /twelve -->   
+
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
+
+
+	<!-- CTA Section
+   ================================================== -->
+	<section id="cta" class="grey-section">
+
+   	<div class="row cta-content">
+
+   		<div class="col-twelve section-grays">  
+
+	     		<h2 class="h01">If you want to see some drawings...</h2>
+
+		      <p class="lead">
+		      I’ve deleted my old portfolio due to the lack of energy and moved my <span>sketchbook to tumblr</span>. 
+I will post the newly updated works when I have free time. 
+				
 				</p>
 
-				<a href="https://drive.google.com/file/d/1GVbGsW53CwwdFccBqpLJ1TVG5SQwBcvT/view" class="light-btn text-intro opacity-0" target="new">PDF portfolio - 4.10 MB ↓</a>
-
-				<a data-dialog="somedialog" class="action-btn trigger text-intro opacity-0">Get in touch.</a>
-						
-			</div> <!-- /. content -->
-
-			<!-- Social icons -->
-			<div class="social-icons text-intro opacity-0">
-
-				<a href="https://www.facebook.com/profile.php?id=100011680907462"><i class="fa fa-facebook"></i></a>
-				<a href="https://twitter.com/night_must_fall" target="new"><i class="fa fa-twitter"></i></a>
-				<!-- <a href="#"><i class="fa fa-google-plus"></i></a> -->
-				<!-- <a href="#"><i class="fa fa-linkedin"></i></a>  -->
-
-			</div> <!-- /. social-icons -->
-
-		</section>
-		<!-- END - Home Part -->
-
-		<!-- START - More Informations Part 
-		<section id="info-wrap">
-
-			<div class="hero">
-					
-				<div class="center-text">
-
-					<h3 class="darky">Everything you need.</h3>
-				
-					<p>Hi, <strong>We are</strong> the Legend, your new template ready to use. Handmade, precisely built with the famous Bootstrap Framework. Bonjour, <strong>Nous sommes</strong> la Légende, votre nouveau template prêt à l'emploi. Fait main, construit avec précision grâce au célèbre Framework Bootstrap. Привет, <strong>Мы</strong> Легенда, ваш новый шаблон готов к использованию. Ручной, четко выстроенная с известным Framework Bootstrap. 嗨，<strong>我们</strong>的联想，新模板就可以使用。手工制作的，恰恰与著名引导框架建成</p>
-
-				</div> 
-
-			</div> 
-
-			<div class="content">
-					
-				<div class="photo-line">
-						
-					<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-
-						
-						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6 clear-second">
-							
-							
-							<a class="box-picture" href="img/gallery-1.jpg" itemprop="contentUrl" data-size="1920x1280">
-								
-								
-								<img src="img/gallery-1.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
-								<div class="text-center">
-									<h4>The bridge</h4>
-									<p>May 14, 2016</p>
-								</div>
-								
-							</a>
-								
-							
-							<figcaption itemprop="caption description">
-
-								<div class="photo-details">
-								
-									<h4>Fly in the sky</h4>
-
-									<span class="border"></span>
-
-									<p>This is what I love, and can't stop loving! I'm told to enjoy every moment, every hour, every minute.</p>
-
-								</div>
-
-							</figcaption>
-
-						</figure>
-
-						
-						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
-							
-							
-							<a class="box-picture" href="img/gallery-2.jpg" itemprop="contentUrl" data-size="1920x1280">
-								
-								
-								<img src="img/gallery-2.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
-								<div class="text-center">
-									<h4>Natural life</h4>
-									<p>July 26, 2016</p>
-								</div>
-								
-							</a>
-								
-							
-							<figcaption itemprop="caption description">
-
-								<div class="photo-details">
-								
-									<h4>探索世界</h4>
-
-									<span class="border"></span>
-
-									<p>This is what I love, and can't stop loving! I'm told to enjoy every moment, every hour, every minute.</p>
-
-								</div>
-
-							</figcaption>
-
-						</figure>
-
-						
-						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6 clear-second">
-							
-							
-							<a class="box-picture" href="img/gallery-3.jpg" itemprop="contentUrl" data-size="1920x1280">
-								
-								
-								<img src="img/gallery-3.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
-								<span class="widget-angle-bottom-left">
-									<span class="icon-text">
-										<i class="icon ion-ios-star"></i>
-									</span>
-								</span>
-								<div class="text-center">
-									<h4>Architecture</h4>
-									<p>June 23, 2016</p>
-								</div>
-								
-							</a>
-								
-							
-							<figcaption itemprop="caption description">
-
-								<div class="photo-details">
-								
-									<h4>Entre ciel et mer</h4>
-
-									<span class="border"></span>
-
-									<p>This is what I love, and can't stop loving! I'm told to enjoy every moment, every hour, every minute.</p>
-
-								</div>
-
-							</figcaption>
-
-						</figure>
-
-						
-						<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="col-xs-12 col-sm-6 col-lg-6">
-							
-						
-							<a class="box-picture" href="img/gallery-4.jpg" itemprop="contentUrl" data-size="1920x1280">
-								
-								
-								<img src="img/gallery-4.jpg" itemprop="thumbnail" alt="This is my work" class="img-responsive" />
-								<span class="widget-angle-top-right">
-									<span class="icon-text">
-										<i class="icon ion-ios-star"></i>
-									</span>
-								</span>
-								<div class="text-center">
-									<h4>The mountains</h4>
-									<p>December 24, 2016</p>
-								</div>
-								
-							</a>
-								
-							
-							<figcaption itemprop="caption description">
-
-								<div class="photo-details">
-								
-									<h4>In einem Kokon</h4>
-
-									<span class="border"></span>
-
-									<p>This is what I love, and can't stop loving! I'm told to enjoy every moment, every hour, every minute.</p>
-
-								</div>
-
-							</figcaption>
-
-						</figure>
-							
-					</div> 
-
-				</div> 
-
-			</div> 
-
-			<div class="dark-hero">
-
-				<div class="center-text">
-
-					<h3 class="lighty">Get in touch!</h3>
-
-					<div class="info-contact row">
-
-		                <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
-		                    <div class="contact-item"><i class="icon ion-ios-telephone"></i>
-		                        <p>Phone: (+33) 66-1254-611
-	                            	<br>Fax: (+38) 66-1254-989</p>
-		                    </div>
-		                </div>
-
-		                <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
-		                    <div class="contact-item"><i class="icon ion-ios-location"></i>
-		                        <p>Hobbemastraat 19,
-		                            <br>Amsterdam, NL</p>
-		                    </div>
-		                </div>
-
-		                <div class="col-xs-12 col-sm-4 col-lg-4 item-map">
-		                    <div class="contact-item"><i class="icon ion-ios-email"></i>
-		                        <p><a href="mailto:your-email@good.com">hiam@example.com</a>
-		                        	<br><a href="mailto:your-email-pro@good.com">hiam-pro@example.com</a>
-		                        </p>
-		                    </div>
-		                </div>
-
-            		</div> 
-
-				</div> 
-
-			</div> 
-
-			<div class="content-form no-padding-bottom">
-
-		        
-		    	<form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
-
-		    		<div class="row">
-
-		                
-		                <div class="col-xs-12 col-sm-6 col-lg-6">
-		                    <div class="form-group">
-		                        <input type="text" id="name" class="form form-control" placeholder="Your Name*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Name*'" name="name" data-name="Name" required>
-		                    </div>
-		                </div>
-
-		                
-		                <div class="col-xs-12 col-sm-6 col-lg-6">
-		                    <div class="form-group">
-		                        <input type="email" id="email" class="form form-control" placeholder="Your Email*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email*'" name="email-address" data-name="Email Address" required>
-		                    </div>
-		                </div>
-
-		              
-		                <div class="col-xs-12 col-sm-12 col-lg-12">
-		                    <div class="form-group">
-		                        <input type="text" id="subject" class="form form-control" placeholder="Write the subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Write the subject'" name="subject" data-name="Subject">
-		                    </div>
-		                </div>
-
-		                
-		                <div class="col-xs-12 col-sm-12 col-lg-12 no-padding">
-		                    <div class="form-group">
-		                        <textarea id="text-area" class="form textarea form-control" placeholder="Your message here*... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here*... 20 characters Min.'" name="message" data-name="Text Area" required></textarea>
-		                    </div>
-		                </div>
-
-		            </div>
-
-		        	
-		        	<button type="submit" id="valid-form" class="btn btn-color">Send my Message</button>
-
-		        </form>
-		        
-		        
-		        <div id="block-answer">
-
-					<div id="answer"></div>
-
-				</div>
-			
-			</div> 
-
-			<footer>
-
-				<p>© LEGEND - Made for legendary people</p>
-
-			</footer>
-
-		</section>
-		 
+				<div class="action">
+			      <a class="button button-primary large" href="http://the-night-must-fall.tumblr.com/tagged/art" target="_blank">My sketchbook</a>
+		      </div>		     	
 
+   		</div>
+
+   	</div> <!-- /cta-content -->
+
+   </section> <!-- /cta --> 
+
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Services</h5>
+   			<h1>What Can I Do For You?</h1>
+
+   			<p class="lead">I am interested in commercial, educational or documentary work.</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Webdesign</h3>
+
+		            <p class="desc">Creating various website designs was part of my everyday routine covering almost every subject: fashion, science, entertainment, interior design, media and culture.
+	         		</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-window"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Print design</h3>  
+
+		            <p class="desc">Flyers, posters, brochures, business cards, menu cards, wedding invitations, T-shirt design, book covers? No problem!
+
+
+	         		</p>
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>	              
+
+	            <div class="service-content">
+
+	            	<h3>UI/UX Design</h3>
+
+		            <p class="desc">I can help to make the interface beautiful and accessible at the same time.
+
+
+	         		</p> 
+	         		
+	            </div>                
+
+				</div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-image"></i></span>	            
+
+	            <div class="service-content">
+
+	            	<h3>Illustration</h3>
+
+		            <p class="desc">I started to draw as a 10 years old and I still love to practice. It is mostly a hobby, but sometimes I have artistic assignments including illustrations and other commissions.
+	        			</p> 
+
+	            </div>	               
+
+			 
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
 		
-		<div class="command-info-wrap">
-			
-			
-			<button class="to-close">
-				<i class="icon ion-close-round"></i>
-			</button>
-
-			
-			<div class="to-scroll" data-toggle="tooltip" data-placement="left" title="Scroll to see more...">
-				<i class="icon ion-arrow-down-c scroll-down"></i>
-			</div>
-
-		</div> <!-- /. command-info-wrap -->
-
-		<!-- START - Newsletter Popup -->
-		<div id="somedialog" class="dialog">
-
-			<div class="dialog__overlay"></div>
-					
-			<div class="dialog__content">
-						
-				<div class="dialog-inner">
-							
-					<h4>CONTACT </h4>
-							
-					<p> If you’re interested in working with me, would like more information or just want to say hello, I’d love to hear from you. <br><br>
-<strong>the.night.must.fall@gmail.com</strong></p>
-
-					<!-- Newsletter Form -->
-					<div id="subscribe">
-
-		                <form action="php/notify-me.php" id="notifyMe" method="POST">
-
-		                    <div class="form-group">
-
-		                        <div class="controls">
-		                            
-		                        	<!--
-		                        	<input type="text" id="mail-sub" name="email" placeholder="Click here to write your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to write your email'" class="form-control email srequiredField" /> 
+	</section> <!-- /services -->	
 
 
-		                        	
-		                        	<i class="fa fa-spinner opacity-0"></i>
+	<!-- stats Section
+   ================================================== -->
 
-		                            
-		                            <button class="btn btn-lg submit">Get notified</button>
-		                             -->
+   					<!-- stats Section eltuntetve
+   ================================================== 
 
-		                            <div class="clear"></div>
 
-		                        </div>
 
-		                    </div>
+	<section id="stats" class="count-up">
 
-		                </form>
-		            
+		<div class="row">
+			<div class="col-twelve">
 
-						<!-- Answer for the newsletter form is displayed in the next div, do not remove it. -->
-						<div class="block-message">
+				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
 
-							<div class="message">
 
-								<p class="notify-valid"></p>
 
-							</div>
 
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-pencil-ruler"></i>
 						</div>
 
-        			</div>
-        			<!-- /. Newsletter Form -->
+						<h3 class="stat-count">
+							500
+						</h3>
 
-				</div>
-				<!-- /. dialog-inner -->
+						<h5 class="stat-title">
+							Projects Completed
+						</h5>
 
-				<!-- Button Cross to close the Newsletter Popup -->
-				<button class="close-newsletter" data-dialog-close><i class="icon ion-close-round"></i></button> 
+					</div> 				
 
-			</div>
-			<!-- /. dialog__content -->
-						
-		</div>
-		<!-- END - Newsletter Popup -->
+																	
 
-		<!-- Root element of PhotoSwipe, the gallery. Must have class pswp. -->
-		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="bgrid stat">
 
-		    <!-- Background of PhotoSwipe. 
-	        	It's a separate element as animating opacity is faster than rgba(). -->
-		    <div class="pswp__bg"></div>
+						<div class="icon-part">
+							<i class="icon-light-bulb"></i>
+						</div>
 
-		    <!-- Slides wrapper with overflow:hidden. -->
-		    <div class="pswp__scroll-wrap">
+						<h3 class="stat-count">
+							120
+						</h3>
 
-		        <!-- Container that holds slides. 
-		            PhotoSwipe keeps only 3 of them in the DOM to save memory.
-		            Don't modify these 3 pswp__item elements, data is added later on. -->
-		        <div class="pswp__container">
-		            <div class="pswp__item"></div>
-		            <div class="pswp__item"></div>
-		            <div class="pswp__item"></div>
-		        </div>
+						<h5 class="stat-title">
+							Crazy Ideas
+						</h5>
 
-		        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-		        <div class="pswp__ui pswp__ui--hidden">
+					</div> 
 
-		            <div class="pswp__top-bar">
 
-		                <!--  Controls are self-explanatory. Order can be changed. -->
+					<div class="bgrid stat">
 
-		                <div class="pswp__counter"></div>
+						<div class="icon-part">
+							<i class="icon-cup"></i>
+						</div>
 
-		                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+						<h3 class="stat-count">
+							1500
+						</h3>
 
-		                <button class="pswp__button pswp__button--share" title="Share"></button>
+						<h5 class="stat-title">
+							Coffee Cups
+						</h5>
 
-		                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+					</div> 
 
-		                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
-		                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-		                <!-- element will get class pswp__preloader--active when preloader is running -->
-		                <div class="pswp__preloader">
-		                    <div class="pswp__preloader__icn">
-		                      <div class="pswp__preloader__cut">
-		                        <div class="pswp__preloader__donut"></div>
-		                      </div>
-		                    </div>
-		                </div>
+					<div class="bgrid stat">
 
-		            </div>
+						<div class="icon-part">
+							<i class="icon-clock"></i>
+						</div>
 
-		            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-		                <div class="pswp__share-tooltip"></div> 
-		            </div>
+						<h3 class="stat-count">
+							7200
+						</h3>
 
-		            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-		            </button>
+						<h5 class="stat-title">
+							Hours
+						</h5>
 
-		            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-		            </button>
+					</div> 
 
-		            <div class="pswp__caption">
-		                <div class="pswp__caption__center"></div>
-		            </div>
 
-		        </div>
 
-		    </div>
 
-		</div>
-		<!-- /. Root element of PhotoSwipe. Must have class pswp. -->
+				</div> 
 
-	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
-    <!-- ********** Resources jQuery ********** -->
-    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+			</div> 
+		</div> 
+
+	</section> 
+
+
+
+					stats Section eltuntetve VÉGE
+   ================================================== -->
 	
-	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.easings.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
 
-	<!-- Accelerated JavaScript animation JS file -->
-	<script src="js/velocity.min.js"></script> 
+		<div class="row section-intro">
+   		<div class="col-twelve">
 
-	<!-- Accelerated JavaScript animation UI JS file -->
-	<script src="js/velocity.ui.min.js"></script> 
+   			<h5>Contact</h5>
+   			<h1>Let’s make magic together! :)</h1>
 
-	<!-- Newsletter plugin -->
-	<script src="js/notifyMe.js"></script>
+   			<p class="lead">If you have any questions, or just would like to say hi, 
+send me a message. Please allow 1-2 business days for replies.</p>
 
-	<!-- Contact form plugin -->
-	<script src="js/contact-me.js"></script>
+   		</div> 
+   	</div> <!-- /section-intro -->
 
-	<!-- Slideshow/Image plugin -->
-	<script src="js/vegas.js"></script>
+   	<div class="row contact-form">
 
-	<!-- Scroll plugin -->
-	<script src="js/jquery.mousewheel.js"></script>
+   		<div class="col-twelve">
 
-	<!-- Custom Scrollbar plugin -->
-	<script src="js/jquery.mCustomScrollbar.js"></script>
+            <!-- form  eltuntetve
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
 
-	<!-- Popup Newsletter Form -->
-	<script src="js/classie.js"></script>
-	<script src="js/dialogFx.js"></script>
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>                       
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>                      
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
 
-	<!-- PhotoSwipe Core JS file -->
-	<script src="js/photoswipe.js"></script> 
+      			</fieldset>
+      		</form> form  eltuntetve VÉGE-->
 
-	<!-- PhotoSwipe UI JS file -->
-	<script src="js/photoswipe-ui-default.js"></script>
+            <!-- contact-warning -->
+            <div id="message-warning">            	
+            </div>            
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
 
-	<!-- Main JS File -->
-	<script src="js/main.js"></script>
-	
-	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+         </div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /contact-form -->
 
-	</body>
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            Twitter: @night_must_fall
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>the.night.must.fall@gmail.com<br>
+			   	Yeah, it's my super cool "hero" name. Very adult.	     
+			   </p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-phone"></i>
+   			</div>
+
+   			<h5>Call Me At</h5>
+
+   			<p>Mobile: (+36) 30 90 75 7 75
+			   </p>
+
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+
+
+   <!-- footer social
+   ================================================== 
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+			      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+			      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+footer social VÉGE
+   ================================================== -->
+
+      	<div class="col-six tab-full">
+	      	<div class="copyright">
+       	
+		     </div>		                  
+	      	</div>
+
+
+	      			<span>© Copyright Angela 2017.</span> 
+		        	<span> Special thanks to <a href="http://www.styleshout.com/" target="_blank">Erwin Aligam</a> (code) </span>
+		        	<span><a href="https://pixelbuddha.net/" target="_blank">PixelBuddha</a> (effects & ideas) </span>
+		        	<span>Ensomhet (gallery hack and moral support) </span>
+		            <span>and <a href="https://github.com/" target="_blank">Github</a>!  </span>   
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
 
 </html>
