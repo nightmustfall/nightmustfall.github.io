@@ -55,10 +55,11 @@
     "versionFirst": "4.7.6",
     "uniqCompNum": 37,
     "versionPublish": "4.9.3",
-    "favicon": "",
+    "favicon": "@PROJECT_PATH@/assets/images/absztrakt-128x128.png",
     "noImageResize": "",
     "google-analytics": "",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "сanonical-url": ""
   },
   "pages": {
     "index.html": {
