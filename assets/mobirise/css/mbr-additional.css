@@ -1382,51 +1382,6 @@ body {
 .cid-rfqnRCPLGM .media-container-row .mbr-text {
   color: #1a1818;
 }
-.cid-rkfel0QgVe {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #ffffff;
-}
-.cid-rkfel0QgVe .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rkfel0QgVe .formoid {
-  margin: auto;
-}
-.cid-rkfel0QgVe .form-control {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-.cid-rkfel0QgVe .input-group-btn .btn {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin: 0 !important;
-}
-.cid-rkfel0QgVe a:not([href]):not([tabindex]) {
-  color: #fff;
-}
-.cid-rkfel0QgVe a.btn-white:not([href]):not([tabindex]) {
-  color: #333;
-}
-@media (max-width: 768px) {
-  .cid-rkfel0QgVe .mbr-form .row {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  .cid-rkfel0QgVe .form-group,
-  .cid-rkfel0QgVe .input-group-btn,
-  .cid-rkfel0QgVe .input-group-btn .btn {
-    max-width: 300px;
-    width: 100%;
-  }
-}
-@media (min-width: 769px) {
-  .cid-rkfel0QgVe .mbr-form .row > * {
-    padding: 0 0.5rem;
-  }
-}
 .cid-qTkzRZLJNu .navbar {
   padding: .5rem 0;
   background: #333333;
