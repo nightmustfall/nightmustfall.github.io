@@ -25,7 +25,7 @@
         "display4Size": "0.8",
         "isRoundedButtons": false,
         "isAnimatedOnScroll": true,
-        "isScrollToTopButton": false
+        "isScrollToTopButton": true
       },
       "additionalSetColors": [
         "#86c980",
@@ -68,8 +68,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "I am a Graphic Designer, I work primarily with Photoshop, Illustrator, InDesign and Sublime Editor.",
-        "meta_descr": "My name is Angéla (aka \"Beau\" or \"NightMustFall\"). I am a graphic designer. I work primarily with Photoshop, Illustrator, InDesign and Sublime Editor. I have intermediate knowledge of HTML, CSS and basic JavaScript for rapid prototyping.",
+        "title": "Angela Horvath's  graphic designer page",
+        "meta_descr": " I am a graphic designer. I work primarily with Photoshop, Illustrator, InDesign and Sublime Editor. I have intermediate knowledge of HTML, CSS and basic JavaScript for rapid prototyping.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
